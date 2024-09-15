@@ -420,6 +420,108 @@ a_{21} & a_{22}
 
 We can adjust the number of rows and columns by adding or removing elements and rows as needed.
 
+\newpage
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=4pt] 
+        ($(current page.north west) + (0.5in,-0.5in)$) 
+        rectangle 
+        ($(current page.south east) + (-0.5in,0.5in)$);
+\end{tikzpicture}
+
+\begin{center}
+    \textbf{\underline{\large{Lab Assignment-4}}}
+\end{center}
+\begin{center}
+    \textbf{\underline{\large{How to create section, subsection, and subsubsection in LaTeX.}}}
+\end{center}
+\section*{\underline{Introduction}}
+
+In LaTeX, sections, subsections, and subsubsections are used to organize and structure your document. Here’s a brief guide on how to create and format these hierarchical levels:
+
+\section{\underline{Basic Structure}}
+
+\subsection{Section}
+\begin{itemize}
+    \item Created using the \texttt{\textbackslash section\{\}} command.
+    \item The section title is automatically numbered.
+\end{itemize}
+
+\subsection{Subsection}
+\begin{itemize}
+    \item Created using the \texttt{\textbackslash subsection\{\}} command.
+    \item Falls under the section and is automatically numbered as a sub-level.
+\end{itemize}
+
+\subsection{Subsubsection}
+\begin{itemize}
+    \item Created using the \texttt{\textbackslash subsubsection\{\}} command.
+    \item Falls under the subsection and is automatically numbered as a sub-sub-level.
+\end{itemize}
+\newpage
+\small{\section{\underline{Example}}
+
+Here’s a simple example to demonstrate the usage of sections, subsections, and subsubsections:
+
+\begin{verbatim}
+\documentclass{article}
+
+\begin{document}
+
+\title{Document with Sections}
+\author{Author Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+This is the introduction section. Here we discuss the background and context of the document.
+
+\subsection{Motivation}
+This subsection explains the motivation behind the topic. It provides insights into why the topic is relevant.
+
+\subsubsection{Historical Context}
+This subsubsection delves into the historical background of the topic, providing a timeline of important events.
+
+\subsection{Objectives}
+This subsection outlines the objectives and goals of the document.
+
+\section{Methods}
+This section describes the methods used in the study or analysis.
+
+\subsection{Data Collection}
+Details about how the data was collected are discussed here.
+
+\subsubsection{Survey Method}
+This subsubsection provides specifics on the survey method used for data collection.
+
+\section{Results}
+This section presents the results of the study or analysis.
+
+\subsection{Analysis}
+Details about the analysis of the results are provided in this subsection.
+
+\subsubsection{Statistical Analysis}
+This subsubsection focuses on the statistical methods used to analyze the data.
+
+\section{Conclusion}
+The final section summarizes the findings and provides conclusions.
+
+\end{document}
+\end{verbatim}
+}
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[line width=4pt] 
+        ($(current page.north west) + (0.3in,-0.3in)$) 
+        rectangle 
+        ($(current page.south east) + (-0.3in,0.3in)$);
+\end{tikzpicture}
+
+\section{\underline{Explanation}}
+
+\begin{itemize}
+    \item \texttt{\textbackslash section\{\}}: Creates a new section and numbers it accordingly. It is the highest level of sectioning in the \texttt{article} class.
+    \item \texttt{\textbackslash subsection\{\}}: Creates a subsection under the current section. It is numbered as part of the section number (e.g., 1.1, 1.2).
+    \item \texttt{\textbackslash subsubsection\{\}}: Creates a subsubsection under the current subsection. It is numbered as part of the subsection number (e.g., 1.1.1, 1.1.2).
+\end{itemize}
 
 
 \end{document}
